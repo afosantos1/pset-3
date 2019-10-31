@@ -2,10 +2,10 @@ const readlineSync = require("readline-sync");
 
 const MIN = 0.01;
 const MAX = 0.99;
-const QUARTER_VALUE = 0.25;
-const DIME_VALUE = 0.1;
-const NICKEL_VALUE = 0.05;
-const PENNY_VALUE = 0.01;
+const VALUE_OF_QUARTERS = 0.25;
+const VALUE_OF_DIMES = 0.1;
+const VALUE_OF_NICKELS = 0.05;
+const VALUE_OF_PENNY = 0.01;
 
 let amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
@@ -19,22 +19,22 @@ if (Number.isNaN(amount)) {
 } else if (amount < MIN || amount > MAX) {
     console.log("\nInvalid.");
 } else {
-    // write your code for making change here
-    while (amount/QUARTER_VALUE >= 1 ){
-      quarters = Math.floor(amount/QUARTER_VALUE);
-      amount = amount % QUARTER_VALUE;
+    
+    while (amount/VALUE_OF_QUARTERS >= 1 ){
+      quarters = Math.floor(amount/VALUE_OF_QUARTERS);
+      amount = amount % VALUE_OF_QUARTERS;
     }
-    while (amount/DIME_VALUE >= 1){
-      dimes = Math.floor(amount/DIME_VALUE);
-      amount = amount % DIME_VALUE;
+    while (amount/VALUE_OF_DIMES >= 1){
+      dimes = Math.floor(amount/VALUE_OF_DIMES);
+      amount = amount % VALUE_OF_DIMES;
     }
-    while (amount/NICKEL_VALUE >= 1){
-      nickels = Math.floor(amount/NICKEL_VALUE);
-      amount = amount % NICKEL_VALUE;
+    while (amount/VALUE_OF_NICKELS >= 1){
+      nickels = Math.floor(amount/VALUE_OF_NICKELS);
+      amount = amount % VALUE_OF_NICKELS;
     }
-    while (amount/PENNY_VALUE >= 1){
-      pennies = Math.floor(amount/PENNY_VALUE);
-      amount = amount % PENNY_VALUE;
+    while (amount/VALUE_OF_PENNY >= 1){
+      pennies = Math.floor(amount/VALUE_OF_PENNY);
+      amount = amount % VALUE_OF_PENNY;
     }
     console.log(`\n${quarters} quarters. ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies.`);
 
