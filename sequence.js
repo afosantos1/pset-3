@@ -10,7 +10,7 @@ if (Number.isNaN(numberOne || numberTwo || numberThree)) {
     console.log("Invalid");
 } else if (numberOne < MIN || numberOne > MAX || numberTwo < MIN || numberTwo > MAX || numberThree < MIN || numberThree > MAX) {
     console.log("Invalid");
-} else if (((numberOne - Math.floor(numberOne)) !==0) || ((numberTwo - Math.floor(number2)) !==0) || ((numberThree - Math.floor(number3)) !==0)) {
+} else if (((numberOne - Math.floor(numberOne)) !==0) || ((numberTwo - Math.floor(numberTwo)) !==0) || ((numberThree - Math.floor(numberThree)) !==0)) {
     console.log("\nInvalid.");
 } else if (numberOne < numberTwo && numberTwo < numberThree) {
     console.log("\nStrictly increasing.")
