@@ -7,7 +7,7 @@ const numberThree = Number(readlineSync.question(""));
 
 if (Number.isNaN(numberOne) || Number.isNaN(numberTwo) || Number.isNaN(numberThree)) {
     console.log("\nInvalid.");
-} else if (numberOne < Number.MIN_SAFE_INTEGER || numberOne > Number.MAX_SAFE_INTEGER || numberTwo < Number.MIN_SAFE_INTEGER || secondNumber > Number.MAX_SAFE_INTEGER || thirdNumber < Number.MIN_SAFE_INTEGER || thirdNumber > Number.MAX_SAFE_INTEGER) {
+} else if (numberOne < Number.MIN_SAFE_INTEGER || numberOne > Number.MAX_SAFE_INTEGER || numberTwo < Number.MIN_SAFE_INTEGER || numberTwo > Number.MAX_SAFE_INTEGER || numberThree < Number.MIN_SAFE_INTEGER || numberThree > Number.MAX_SAFE_INTEGER) {
     console.log("\nInvalid.");
 } else if (numberOne<numberTwo && numberTwo<numberThree) {
       console.log("\nStrictly increasing.")
