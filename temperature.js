@@ -31,3 +31,4 @@ else if (temp <= 0 && scale == "C" )  {
 }
 else if (Number.isNaN(temp)){
   console.log("\nInvalid.\n");
+}
