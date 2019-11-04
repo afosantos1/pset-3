@@ -39,6 +39,6 @@ if (Number.isNaN(grade)) {
     }
 
     if (run == true) {
-      console.log("\nYou recieved a(n) " + letterGrade +  ".");
+      console.log("\nYou recieved an " + letterGrade +  ".");
     }
 }
