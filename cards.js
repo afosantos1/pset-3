@@ -1,7 +1,7 @@
 const readlineSync = require("readline-sync");
 
 let card = readlineSync.question("\nEnter a playing card: ");
-playingCard = playingCard.toLowerCase();
+card = card.toLowerCase();
 let output = "";
 let valid = true;
 
